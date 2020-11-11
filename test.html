@@ -9,14 +9,52 @@
 <body>
   <form action="results.html" method="GET ">
     <div>
-      <label> Name </label>
-      <input name= "name"> 
+      <label for="name"> Name </label>
+      <input type="text" name= "name" id="name" value="eder" placeholder="username" required> 
     </div>
     <div>
-      <label> Password </label>
-      <input name="password"> 
+      <label for="email"> Email</label>
+      <input type="email" name="email" id="email" required> 
     </div>
-      <button> Submit </button>
+    <div>
+      <label for='age'> Age </label>
+      <input type="number" id="age" step="1" min="1" max="200"> 
+    </div>
+    <label for="date"> Date</label>
+    <input type="date" name="date" id="date" min="2020-11-11"> 
+    <div>
+      <label> Password </label>
+      <input type="password" name="password" required> 
+    </div>
+
+    <!-- Checkbox -->
+    <div>
+      Favorite Food 
+      <div> 
+        <label for="pizza"> Pizza </label>
+        <input type="checkbox" id="pizza" name="pizza">
+      </div> 
+      <div>
+        <label for="pozole"> Pozole </label>
+        <input type="checkbox" id="pozole" name="pozole"> 
+      </div>
+    </div>
+
+  <!-- Radio -->
+<div>
+  Gender
+  <div>
+    <label for="male"> Male </label>
+    <input type="radio" name="gender" id="male"> 
+  </div>
+  <div> 
+    <label for="female"> Female </label>
+    <input type="radio" name=""> 
+  </div>
+</div>
+
+      <button type="submit"> Submit </button>
+      <button type="reset"> Reset </button>
   </form>
 
 </body>
